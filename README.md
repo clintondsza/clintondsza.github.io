@@ -1,2 +1,2 @@
-# clintondsza.github.io - 0.0
+# clintondsza.github.io - 1.0
 0.0 - under construction landing page.
