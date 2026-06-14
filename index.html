@@ -1,0 +1,905 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Clinton Dsouza — Technology, Security &amp; Storytelling</title>
+        <meta name="description" content="Bridging cybersecurity, communication, and human-centered technology through security research, homelab experimentation, and digital storytelling." />
+        <meta name="author" content="Clinton Dsouza" />
+        <meta name="robots" content="index, follow" />
+        <meta name="theme-color" content="#FAFAFA" />
+
+        <!-- Open Graph -->
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Clinton Dsouza — Technology, Security &amp; Storytelling" />
+        <meta property="og:description" content="Bridging cybersecurity, communication, and human-centered technology through security research, homelab experimentation, and digital storytelling." />
+        <!-- Fill in once deployed: -->
+        <!-- <meta property="og:url" content="https://your-domain.com/" /> -->
+        <!-- <meta property="og:image" content="https://your-domain.com/assets/og-image.png" /> -->
+
+        <!-- Twitter / X Card -->
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Clinton Dsouza — Technology, Security &amp; Storytelling" />
+        <meta name="twitter:description" content="Bridging cybersecurity, communication, and human-centered technology through security research, homelab experimentation, and digital storytelling." />
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/svg+xml" href="assets/icons/clinton-avatar.svg" />
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Preload critical above-fold asset -->
+        <link rel="preload" href="assets/icons/clinton-avatar.svg" as="image" type="image/svg+xml" />
+
+        <link rel="stylesheet" href="./style.css" />
+        <script src="./script.js" defer></script>
+    </head>
+    <body>
+        <a href="#main-content" class="skip-link">Skip to main content</a>
+
+        <!-- Loading overlay shown while page assets load -->
+        <div id="loading-overlay" class="loading-overlay" aria-hidden="false">
+            <div class="loading-card">
+                <div class="loader" aria-hidden="true"></div>
+            </div>
+        </div>
+        <!-- ==================== NAV ==================== -->
+        <nav class="main-nav" aria-label="Main navigation">
+            <div class="nav-container">
+                <span class="nav-name">Clinton Dsouza</span>
+                <div class="nav-actions">
+                    <div
+                        class="toggle-container"
+                        role="radiogroup"
+                        aria-label="Portfolio Mode"
+                    >
+                        <button
+                            type="button"
+                            class="toggle-btn active"
+                            data-mode="technical"
+                            role="radio"
+                            aria-checked="true"
+                        >
+                            Technical
+                        </button>
+                        <button
+                            type="button"
+                            class="toggle-btn"
+                            data-mode="creative"
+                            role="radio"
+                            aria-checked="false"
+                        >
+                            Creative
+                        </button>
+                        <div class="toggle-indicator" aria-hidden="true"></div>
+                    </div>
+                    <a href="#contact" class="nav-link btn btn-outline">
+                        Contact
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- ==================== HERO ==================== -->
+        <header class="hero section fade-in">
+            <div class="container">
+                <div class="hero-intro">
+                    <div class="hero-avatar">
+                        <img
+                            class="hero-avatar-image"
+                            src="assets/icons/clinton-avatar.svg"
+                            alt="Clinton Dsouza avatar"
+                            width="120"
+                            height="120"
+                        />
+                    </div>
+                    <h1 class="hero-title">Hi, I'm CLIN10</h1>
+                    <p class="hero-desc">
+                        Driven by curiosity, continuous growth, and a passion for cybersecurity, leadership, and creative media.
+                    </p>
+                </div>
+                <nav class="social-links" aria-label="Social profiles">
+                    <a href="https://www.linkedin.com/in/clintondsza/" aria-label="LinkedIn profile" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    <a href="https://github.com/clintondsza" aria-label="GitHub profile" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    <a href="https://medium.com/@clintondsza" aria-label="Medium blog" target="_blank" rel="noopener noreferrer">Medium</a>
+                    <a href="https://www.instagram.com/visualsodyssey/" aria-label="Instagram Odyssey" target="_blank" rel="noopener noreferrer">IG (Odyssey)</a>
+                    <a href="https://www.instagram.com/visualsbydsouza/" aria-label="Instagram Commercial" target="_blank" rel="noopener noreferrer">IG (Commercial)</a>
+                    <a href="https://www.tiktok.com/@visuals_odyssey" aria-label="TikTok" target="_blank" rel="noopener noreferrer">TikTok</a>
+                    <a href="https://www.behance.net/visualsbydsouza" aria-label="Behance portfolio" target="_blank" rel="noopener noreferrer">Behance</a>
+                    <a href="https://www.facebook.com/people/VisualsOdyssey/61565488979244/" aria-label="Facebook Odyssey" target="_blank" rel="noopener noreferrer">FB (Odyssey)</a>
+                </nav>
+            </div>
+        </header>
+
+        <!-- ==================== MODE TOGGLE ==================== -->
+        <section
+            class="mode-toggle-section fade-in"
+            aria-label="Portfolio mode selector"
+        >
+            <div class="container">
+                <div class="toggle-wrapper">
+                    <div
+                        class="toggle-container"
+                        role="radiogroup"
+                        aria-label="Portfolio Mode"
+                    >
+                        <button
+                            type="button"
+                            class="toggle-btn active"
+                            data-mode="technical"
+                            role="radio"
+                            aria-checked="true"
+                        >
+                            Technical
+                        </button>
+                        <button
+                            type="button"
+                            class="toggle-btn"
+                            data-mode="creative"
+                            role="radio"
+                            aria-checked="false"
+                        >
+                            Creative
+                        </button>
+                        <div class="toggle-indicator" aria-hidden="true"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== MAIN CONTENT ==================== -->
+        <main id="main-content">
+            <!-- ===== TECHNICAL MODE ===== -->
+            <div id="technical-content" class="mode-content active">
+                <!-- About -->
+                <section class="section fade-in" id="about">
+                    <div class="container">
+                        <span class="section-label">Background</span>
+                        <h2 class="section-title">About Me</h2>
+                        <div class="text-content">
+                            <p>
+                                Technology has always interested me, but people, leadership, and continuous growth have shaped how I approach it. My cybersecurity journey is built on curiosity and hands-on learning. Whether through graduate studies, homelab experimentation, community involvement, or independent projects, I am constantly exploring new ideas and expanding my understanding of security.
+                            </p>
+                            <p>
+                                What draws me to cybersecurity is its ability to influence real-world decisions. I enjoy understanding complex challenges, evaluating risks, and helping organizations build more secure and resilient environments. As I continue to grow in the field, I remain driven by curiosity, continuous learning, and the opportunity to make a meaningful impact through technology and security.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="section-divider"></div>
+
+                <!-- Protected Docs -->
+                <section class="section fade-in" id="protected-docs">
+                    <div class="container">
+                        <span class="section-label">Documents</span>
+                        <h2 class="section-title">Experience &amp; Journey</h2>
+                        <div class="protected-grid">
+                            <div class="protected-card">
+                                <h3>Resume</h3>
+                                <p>
+                                    A detailed overview of my professional experience, education, technical skills, certifications, and cybersecurity projects.
+                                </p>
+                                <button
+                                    type="button"
+                                    class="btn btn-outline"
+                                    onclick="openModal('beta')"
+                                    aria-haspopup="dialog"
+                                >
+                                    View Resume
+                                </button>
+                            </div>
+                            <div class="protected-card">
+                                <h3>Community &amp; Leadership Journey</h3>
+                                <p>
+                                    A look beyond the resume, highlighting community involvement, leadership experiences, volunteering, events, and personal growth.
+                                </p>
+                                <button
+                                    type="button"
+                                    class="btn btn-outline"
+                                    onclick="openModal('gamma')"
+                                    aria-haspopup="dialog"
+                                >
+                                    Explore Journey
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="section-divider"></div>
+
+                <!-- Projects -->
+                <section class="section fade-in" id="projects">
+                    <div class="container">
+                        <span class="section-label">Work</span>
+                        <h2 class="section-title">Projects</h2>
+                        <div class="project-grid">
+                            <div class="project-card">
+                                <h3>Proxmox-homelab-guide</h3>
+                                <p>
+                                    A step-by-step guide for building a Proxmox VE homelab on a GMKtec NucBox G9, including Ubuntu Server, Docker, Portainer, Uptime Kuma, and Kali Linux.
+                                </p>
+                                <a
+                                    href="https://github.com/clintondsza/proxmox-homelab-guide.git"
+                                    class="read-more"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    aria-label="View Homelab Infrastructure case study"
+                                >
+                                    View on GitHub
+                                </a>
+                            </div>                            
+                        </div>
+                    </div>
+                </section>
+
+                <div class="section-divider"></div>
+
+                <!-- Writing -->
+                <section class="section fade-in" id="writing">
+                    <div class="container">
+                        <span class="section-label">Writing</span>
+                        <h2 class="section-title">Articles</h2>
+                        <div class="article-grid">
+                            <article class="article-card">
+                                <h3>Building a Proxmox Homelab on a Mini PC: From Bare Metal to a Virtualized Lab Environment</h3>
+                                <p>
+                                    Building a Proxmox homelab on a GMKtec NucBox G9 with Ubuntu Server, Docker, Portainer, Uptime Kuma, and Kali Linux.
+                                </p>
+                                <a
+                                    href="https://medium.com/@clintondsza/building-a-proxmox-homelab-on-a-mini-pc-from-bare-metal-to-a-virtualized-lab-environment-6041bdbe542d"
+                                    class="read-more"
+                                    aria-label="Read on Medium"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >Read on Medium</a>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="section-divider"></div>
+
+                <!-- Exploring -->
+                <section class="section fade-in" id="exploring">
+                    <div class="container">
+                        <span class="section-label">Interests</span>
+                        <h2 class="section-title">Currently Exploring</h2>
+                        <div class="tags-list">
+                            <span class="tag">Security Operations</span>
+                            <span class="tag">Threat Intelligence</span>
+                            <span class="tag">AI Security</span>
+                            <span class="tag">Technical Support</span>
+                            <span class="tag">Sales Engineering</span>
+                            <span class="tag">Vulnerability Management</span>
+                            <span class="tag">Governance, Risk & Compliance</span>
+                            <span class="tag">Incident Response</span>
+                            <span class="tag">Cloud Security</span>
+                            <span class="tag">Human-Centered Security</span>
+                            <span class="tag">Security Awareness</span>
+                            <span class="tag">Security Consulting</span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- FUTURE: Certifications
+                <section class="section" id="certifications">
+                    <div class="container">
+                        <h2 class="section-title">Certifications</h2>
+                    </div>
+                </section>
+                -->
+
+                <!-- FUTURE: Services
+                <section class="section" id="services">
+                    <div class="container">
+                        <h2 class="section-title">Services</h2>
+                    </div>
+                </section>
+                -->
+
+                <!-- FUTURE: Skills
+                <section class="section" id="skills">
+                    <div class="container">
+                        <h2 class="section-title">Skills</h2>
+                    </div>
+                </section>
+                -->
+
+                <!-- FUTURE: Additional Projects
+                <section class="section" id="additional-projects">
+                    <div class="container">
+                        <h2 class="section-title">Additional Projects</h2>
+                    </div>
+                </section>
+                -->
+            </div>
+
+            <!-- ===== CREATIVE MODE ===== -->
+            <div id="creative-content" class="mode-content">
+                <!-- Creative Intro -->
+                <section class="section fade-in" id="creative-intro">
+                    <div class="container">
+                        <div class="logos-placeholder" aria-label="Brand logos">
+                            <figure class="logo-item">
+                                <img src="assets/logos/visualsbydsouza.png" alt="Visuals by Dsouza logo" />
+                                <figcaption>Visuals by Dsouza</figcaption>
+                            </figure>
+                            <figure class="logo-item">
+                                <img src="assets/logos/visualsodyssey.png" alt="Visuals Odyssey logo" />
+                                <figcaption>Visuals Odyssey</figcaption>
+                            </figure>
+                        </div>
+                        <span class="section-label">Creative</span>
+                        <h2 class="section-title">Visual Storytelling</h2>
+                        <div class="text-content">
+                            <p>
+                                My creative work spans Digital Marketing, Branding,
+                                Photography, Cinematography, Storytelling, and
+                                Content Creation. Every image, frame, and
+                                campaign should evoke a sense of purpose and
+                                connect deeply with its audience - telling
+                                stories that linger long after the shutter
+                                closes.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="section-divider"></div>
+
+                <!-- Creative Expertise -->
+                <section class="section fade-in" id="creative-expertise">
+                    <div class="container">
+                        <span class="section-label">Experience</span>
+                        <h2 class="section-title">Creative Disciplines</h2>
+                        <div class="tags-list">
+                            <span class="tag">Photography</span>
+                            <span class="tag">Videography & Reels</span>
+                            <span class="tag">Graphic Design</span>
+                            <span class="tag">Brand Strategy</span>
+                            <span class="tag">Content Strategy</span>
+                            <span class="tag">Content Creation</span>
+                            <span class="tag">Social Media Marketing</span>
+                            <span class="tag">Digital Marketing</span>
+                            <span class="tag">Web Design</span>
+                            <span class="tag">Search Engine Optimization</span>
+                            <span class="tag">Visual Storytelling</span>
+                            <span class="tag">Event Coverage</span>
+                            <span class="tag">Community Engagement</span>
+                            <span class="tag">Creative Leadership</span>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="section-divider"></div>
+
+                <!-- Portfolio Grid -->
+                <section class="section fade-in" id="creative-portfolio">
+                    <div class="container">
+                        <span class="section-label">Portfolio</span>
+                        <h2 class="section-title">Collections</h2>
+                        <div class="creative-grid">
+                            <!-- Food & Beverages -->
+                            <div class="creative-card">
+                                <div class="mosaic" aria-hidden="true">
+                                    <div class="mosaic-item">
+                                        <img
+                                            src="assets/images/food-beverages/01.webp"
+                                            alt="Food and beverages photography 1"
+                                            loading="lazy"
+                                            decoding="async"
+                                        />
+                                    </div>
+                                    <div class="mosaic-item">
+                                        <img
+                                            src="assets/images/food-beverages/02.webp"
+                                            alt="Food and beverages photography 2"
+                                            loading="lazy"
+                                            decoding="async"
+                                        />
+                                    </div>
+                                    <div class="mosaic-item">
+                                        <img
+                                            src="assets/images/food-beverages/03.webp"
+                                            alt="Food and beverages photography 3"
+                                            loading="lazy"
+                                            decoding="async"
+                                        />
+                                    </div>
+                                    <div class="mosaic-item">
+                                        <img
+                                            src="assets/images/food-beverages/04.webp"
+                                            alt="Food and beverages photography 4"
+                                            loading="lazy"
+                                            decoding="async"
+                                        />
+                                    </div>
+                                </div>
+                                <div class="creative-card-content">
+                                    <h3>Food &amp; Beverages</h3>
+                                    <p>
+                                        Restaurant photography, cafe branding
+                                        and hospitality storytelling.
+                                    </p>
+                                    <a
+                                        href="https://www.behance.net/gallery/191165489/Food-and-beverage"
+                                        class="btn btn-primary btn-sm"
+                                        aria-label="View Food and Beverages collection on Behance"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >View Collection</a>
+                                </div>
+                            </div>
+
+                            <!-- Music // Images -->
+                            <div class="creative-card">
+                                <div class="mosaic" aria-hidden="true">
+                                    <div class="mosaic-item">
+                                        <img
+                                            src="assets/images/music-images/01.webp"
+                                            alt="Music and concert photography 1"
+                                            loading="lazy"
+                                            decoding="async"
+                                        />
+                                    </div>
+                                    <div class="mosaic-item">
+                                        <img
+                                            src="assets/images/music-images/02.webp"
+                                            alt="Music and concert photography 2"
+                                            loading="lazy"
+                                            decoding="async"
+                                        />
+                                    </div>
+                                    <div class="mosaic-item">
+                                        <img
+                                            src="assets/images/music-images/03.webp"
+                                            alt="Music and concert photography 3"
+                                            loading="lazy"
+                                            decoding="async"
+                                        />
+                                    </div>
+                                    <div class="mosaic-item">
+                                        <img
+                                            src="assets/images/music-images/04.webp"
+                                            alt="Music and concert photography 4"
+                                            loading="lazy"
+                                            decoding="async"
+                                        />
+                                    </div>
+                                </div>
+                                <div class="creative-card-content">
+                                    <h3>Music // Images</h3>
+                                    <p>
+                                        Concert photography, artist branding and
+                                        live performance imagery.
+                                    </p>
+                                    <a
+                                        href="https://www.behance.net/gallery/191166377/Music-Images"
+                                        class="btn btn-primary btn-sm"
+                                        aria-label="View Music Images collection on Behance"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >View Collection</a>
+                                </div>
+                            </div>
+
+                            <!-- Ambiance -->
+                            <div class="creative-card">
+                                <div class="mosaic" aria-hidden="true">
+                                    <div class="mosaic-item">
+                                        <img
+                                            src="assets/images/ambiance/01.webp"
+                                            alt="Ambiance and interior photography 1"
+                                            loading="lazy"
+                                            decoding="async"
+                                        />
+                                    </div>
+                                    <div class="mosaic-item">
+                                        <img
+                                            src="assets/images/ambiance/02.webp"
+                                            alt="Ambiance and interior photography 2"
+                                            loading="lazy"
+                                            decoding="async"
+                                        />
+                                    </div>
+                                    <div class="mosaic-item">
+                                        <img
+                                            src="assets/images/ambiance/03.webp"
+                                            alt="Ambiance and interior photography 3"
+                                            loading="lazy"
+                                            decoding="async"
+                                        />
+                                    </div>
+                                    <div class="mosaic-item">
+                                        <img
+                                            src="assets/images/ambiance/04.webp"
+                                            alt="Ambiance and interior photography 4"
+                                            loading="lazy"
+                                            decoding="async"
+                                        />
+                                    </div>
+                                </div>
+                                <div class="creative-card-content">
+                                    <h3>Ambiance</h3>
+                                    <p>
+                                        Spaces, interiors, atmosphere and
+                                        environmental storytelling.
+                                    </p>
+                                    <a
+                                        href="https://www.behance.net/gallery/191168553/Ambiance"
+                                        class="btn btn-primary btn-sm"
+                                        aria-label="View Ambiance collection on Behance"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >View Collection</a>
+                                </div>
+                            </div>
+
+                            <!-- Videos & Reels -->
+                            <div class="creative-card">
+                                <div class="mosaic" aria-hidden="true">
+                                    <div class="mosaic-item">
+                                        <img
+                                            src="assets/images/videos-reels/01.webp"
+                                            alt="Videos and reels project preview 1"
+                                            loading="lazy"
+                                            decoding="async"
+                                        />
+                                    </div>
+                                    <div class="mosaic-item">
+                                        <img
+                                            src="assets/images/videos-reels/02.webp"
+                                            alt="Videos and reels project preview 2"
+                                            loading="lazy"
+                                            decoding="async"
+                                        />
+                                    </div>
+                                    <div class="mosaic-item">
+                                        <img
+                                            src="assets/images/videos-reels/03.webp"
+                                            alt="Videos and reels project preview 3"
+                                            loading="lazy"
+                                            decoding="async"
+                                        />
+                                    </div>
+                                    <div class="mosaic-item">
+                                        <img
+                                            src="assets/images/videos-reels/04.webp"
+                                            alt="Videos and reels project preview 4"
+                                            loading="lazy"
+                                            decoding="async"
+                                        />
+                                    </div>
+                                </div>
+                                <div class="creative-card-content">
+                                    <h3>Videos &amp; Reels</h3>
+                                    <p>
+                                        Commercial videos, branded content,
+                                        event coverage, and social media reels.
+                                    </p>
+                                    <a
+                                        href="https://www.behance.net/gallery/192866849/Videos-Reels"
+                                        class="btn btn-primary btn-sm"
+                                        aria-label="View Videos and Reels collection on Behance"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >View Collection</a>
+                                </div>
+                            </div>
+
+                            <!-- Product & Lifestyle -->
+                            <div class="creative-card">
+                                <div class="mosaic" aria-hidden="true">
+                                    <div class="mosaic-item">
+                                        <img
+                                            src="assets/images/product-lifestyle/01.webp"
+                                            alt="Product and lifestyle photography 1"
+                                            loading="lazy"
+                                            decoding="async"
+                                        />
+                                    </div>
+                                    <div class="mosaic-item">
+                                        <img
+                                            src="assets/images/product-lifestyle/02.webp"
+                                            alt="Product and lifestyle photography 2"
+                                            loading="lazy"
+                                            decoding="async"
+                                        />
+                                    </div>
+                                    <div class="mosaic-item">
+                                        <img
+                                            src="assets/images/product-lifestyle/03.webp"
+                                            alt="Product and lifestyle photography 3"
+                                            loading="lazy"
+                                            decoding="async"
+                                        />
+                                    </div>
+                                    <div class="mosaic-item">
+                                        <img
+                                            src="assets/images/product-lifestyle/04.webp"
+                                            alt="Product and lifestyle photography 4"
+                                            loading="lazy"
+                                            decoding="async"
+                                        />
+                                    </div>
+                                </div>
+                                <div class="creative-card-content">
+                                    <h3>Product &amp; Lifestyle</h3>
+                                    <p>
+                                        Products, branding and lifestyle
+                                        campaigns.
+                                    </p>
+                                    <a
+                                        href="https://www.behance.net/gallery/192704087/Productlifestyle"
+                                        class="btn btn-primary btn-sm"
+                                        aria-label="View Product and Lifestyle collection on Behance"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >View Collection</a>
+                                </div>
+                            </div>
+
+                            <!-- Travel -->
+                            <div class="creative-card">
+                                <div class="mosaic" aria-hidden="true">
+                                    <div class="mosaic-item">
+                                        <img
+                                            src="assets/images/odyssey/01.webp"
+                                            alt="Odyssey 1"
+                                            loading="lazy"
+                                            decoding="async"
+                                        />
+                                    </div>
+                                    <div class="mosaic-item">
+                                        <img
+                                            src="assets/images/odyssey/02.webp"
+                                            alt="Odyssey 2"
+                                            loading="lazy"
+                                            decoding="async"
+                                        />
+                                    </div>
+                                    <div class="mosaic-item">
+                                        <img
+                                            src="assets/images/odyssey/03.webp"
+                                            alt="Odyssey 3"
+                                            loading="lazy"
+                                            decoding="async"
+                                        />
+                                    </div>
+                                    <div class="mosaic-item">
+                                        <img
+                                            src="assets/images/odyssey/04.webp"
+                                            alt="Odyssey 4"
+                                            loading="lazy"
+                                            decoding="async"
+                                        />
+                                    </div>
+                                </div>
+                                <div class="creative-card-content">
+                                    <h3>Odyssey</h3>
+                                    <p>
+                                        A collection of moments, places and experiences encountered along the journey.
+                                    </p>
+                                    <a
+                                        href="https://www.instagram.com/visualsodyssey/"
+                                        class="btn btn-primary btn-sm"
+                                        aria-label="View Odyssey collection on Instagram"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >View Collection</a>
+                                </div>
+                            </div>
+
+                            <!-- People & Portraits (Protected) -->
+                            <div class="creative-card">
+                                <div class="mosaic blurred" aria-hidden="true">
+                                    <div class="mosaic-item">
+                                        <img
+                                            src="assets/images/people-portraits/01.webp"
+                                            alt=""
+                                            loading="lazy"
+                                            decoding="async"
+                                        />
+                                    </div>
+                                    <div class="mosaic-item">
+                                        <img
+                                            src="assets/images/people-portraits/02.webp"
+                                            alt=""
+                                            loading="lazy"
+                                            decoding="async"
+                                        />
+                                    </div>
+                                    <div class="mosaic-item">
+                                        <img
+                                            src="assets/images/people-portraits/03.webp"
+                                            alt=""
+                                            loading="lazy"
+                                            decoding="async"
+                                        />
+                                    </div>
+                                    <div class="mosaic-item">
+                                        <img
+                                            src="assets/images/people-portraits/04.webp"
+                                            alt=""
+                                            loading="lazy"
+                                            decoding="async"
+                                        />
+                                    </div>
+                                </div>
+                                <div class="creative-card-content">
+                                    <h3>People &amp; Portraits</h3>
+                                    <p>
+                                        People, moments, and stories captured through portraits, events, and human-centered photography — access restricted.
+                                    </p>
+                                    <button
+                                        type="button"
+                                        class="btn btn-primary btn-sm"
+                                        onclick="openModal('delta')"
+                                        aria-haspopup="dialog"
+                                    >
+                                        View Collection
+                                    </button>
+                                </div>
+                            </div>
+                            
+                            <!-- Graphic Design
+                            <div class="creative-card">
+                                <div class="mosaic" aria-hidden="true">
+                                    <div class="mosaic-item">
+                                        <img
+                                            src="assets/images/graphic-design/01.webp"
+                                            alt="Graphic design work 1"
+                                            loading="lazy"
+                                            decoding="async"
+                                        />
+                                    </div>
+                                    <div class="mosaic-item">
+                                        <img
+                                            src="assets/images/graphic-design/02.webp"
+                                            alt="Graphic design work 2"
+                                            loading="lazy"
+                                            decoding="async"
+                                        />
+                                    </div>
+                                    <div class="mosaic-item">
+                                        <img
+                                            src="assets/images/graphic-design/03.webp"
+                                            alt="Graphic design work 3"
+                                            loading="lazy"
+                                            decoding="async"
+                                        />
+                                    </div>
+                                    <div class="mosaic-item">
+                                        <img
+                                            src="assets/images/graphic-design/04.webp"
+                                            alt="Graphic design work 4"
+                                            loading="lazy"
+                                            decoding="async"
+                                        />
+                                    </div>
+                                </div>
+                                <div class="creative-card-content">
+                                    <h4>Graphic Design</h4>
+                                    <p>
+                                        Branding, social media design and visual
+                                        identity systems.
+                                    </p>
+                                    <a
+                                        href="#"
+                                        class="btn btn-primary btn-sm"
+                                        aria-label="View Graphic Design collection on Behance"
+                                        >View Collection</a>
+                                </div>
+                            -->
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- ==================== CONTACT ==================== -->
+            <div class="section-divider"></div>
+            <section class="section fade-in" id="contact">
+                <div class="container">
+                    <span class="section-label">Let's talk</span>
+                    <h2 class="section-title">Get in Touch</h2>
+                    <div class="contact-form-wrapper">
+                        <iframe
+                            src="https://tally.so/embed/44zpzA?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+                            width="100%"
+                            height="313"
+                            title="Contact form"
+                            loading="lazy"
+                        ></iframe>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- ==================== FOOTER ==================== -->
+        <footer class="site-footer">
+            <div class="container footer-content">
+                <nav class="footer-social" aria-label="Social links">
+                    <a href="mailto:clintonaneesh@gmail.com" aria-label="Send an email">Email</a>
+                    <a href="https://x.com/DszaClinton" aria-label="X (Twitter)" target="_blank" rel="noopener noreferrer">X (Twitter)</a>
+                    <a href="https://www.linkedin.com/in/clintondsza/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                </nav>
+                <p class="footer-copy">
+                    &copy; <span id="year"></span> Clinton Dsouza. All rights reserved.
+                </p>
+            </div>
+        </footer>
+
+        <!-- ==================== PASSWORD MODAL ==================== -->
+        <div
+            id="password-modal"
+            class="modal-overlay"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="modal-title"
+            aria-describedby="modal-description"
+            hidden
+        >
+            <div class="modal-card">
+                <h3 id="modal-title">Protected Content</h3>
+                <p id="modal-description">Enter the passphrase to continue.</p>
+                <div class="modal-body" id="modal-password-step">
+                    <input
+                        type="password"
+                        id="modal-password-input"
+                        placeholder="Passphrase"
+                        aria-label="Passphrase"
+                        autocomplete="current-password"
+                    />
+                    <p id="modal-error" class="error-msg" role="alert" hidden>
+                        Incorrect passphrase. Please try again.
+                    </p>
+                </div>
+                <div class="modal-body" id="modal-resource-step" hidden>
+                    <p id="modal-resource-name" class="modal-resource-name"></p>
+                    <p id="modal-fallback" class="error-msg" role="alert" hidden>
+                        This resource is not available right now. Please try again later.
+                    </p>
+                    <div class="resource-actions">
+                        <button
+                            type="button"
+                            class="btn btn-outline"
+                            onclick="openProtectedResource('view')"
+                        >
+                            View Online
+                        </button>
+                        <button
+                            type="button"
+                            class="btn btn-primary"
+                            onclick="openProtectedResource('pdf')"
+                        >
+                            Download PDF
+                        </button>
+                    </div>
+                </div>
+                <div class="modal-actions" id="modal-password-actions">
+                    <button
+                        type="button"
+                        class="btn btn-outline"
+                        onclick="closeModal()"
+                    >
+                        Close
+                    </button>
+                    <button
+                        type="button"
+                        class="btn btn-primary"
+                        onclick="submitModal()"
+                    >
+                        Confirm
+                    </button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
